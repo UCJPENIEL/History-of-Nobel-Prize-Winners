@@ -1,67 +1,94 @@
-# 🏆 Nobel Prize Analysis (1901–2023)
+# Analyzing-Crime-in-Los-Angeles
+# 🚓 LAPD Crime Data Analysis  
 
-## 📌 Project Overview
-This project analyzes Nobel Prize data from 1901 to 2023, uncovering key trends in gender, nationality, and category distribution.  
-All visuals were built in **Jupyter Notebook** using **Matplotlib** and **Seaborn**.
-
----
-
-## 🎯 Objectives
-- Explore demographic and geographic patterns of laureates.  
-- Identify long-term shifts in Nobel recognition.  
-- Present findings with clear, professional visualizations.  
+![Python](https://img.shields.io/badge/Python-3.9-blue)  
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-yellowgreen)  
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)  
+![Seaborn](https://img.shields.io/badge/Seaborn-Charts-blueviolet) 
+![ReportLab](https://img.shields.io/badge/ReportLab-PDF%20Reports-lightgrey)  
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)  
 
 ---
 
-## 📊 Dataset
-- **Source:** Nobel Prize dataset (`nobel.csv`).  
-- **Features:** Year, Category, Birth Country, Sex, Motivation, etc.  
-- **Derived Columns:**  
-  - `decade` → Groups laureates by decade  
-  - `is_female` → Gender flag  
-  - `is_us_born` → US-born flag  
+## 📊 Overview  
+
+Los Angeles, California, is one of the most vibrant and diverse cities in the world — but with its size and activity comes crime.  
+This project analyzes **crime data from the Los Angeles Police Department (LAPD)** to identify **patterns in criminal behavior** and provide **data-driven recommendations for resource allocation**.  
+
+### Key Questions Answered:
+- ⏰ What time of day do crimes peak?  
+- 🌃 Which areas have the highest crime rates at night?  
+- 👥 Which age groups are most vulnerable?  
 
 ---
 
-## 🔍 Key Insights
-- **Gender gap:** Nobel Prizes remain male-dominated, though female representation is slowly improving.  
-- **US dominance:** Since the mid-20th century, US-born laureates have consistently led across categories.  
-- **Country diversity:** Physics and Chemistry show concentrated awards, while Peace Prizes have the most diverse set of laureates.  
+## 📂 Dataset  
+
+- **Source:** Modified version of [Los Angeles Open Data – Crime Data](https://www.datacamp.com/datalab/w/fb1992cd-cf01-4cea-a0ad-cd477d93f0c3/edit)  
+- **File:** `crimes.csv`  
+- **Size:** ~ 100,000 × 12 (rows × columns)  
+- **Key Columns:**  
+  - `DATE OCC` → Date of occurrence  
+  - `TIME OCC` → Time (24-hour format)  
+  - `AREA NAME` → Geographic patrol area  
+  - `Crm Cd Desc` → Crime description  
+  - `Vict Age` → Victim age  
+  - `Vict Sex` → Victim gender  
+  - `LOCATION` → Street address of the crime  
 
 ---
 
-## 📸 Visualizations
-*(Export your plots as PNGs, save them in an `/images` folder, and replace the links below.)*
+## 🛠️ Tools & Libraries Used  
 
-- **Gender Distribution**  
-  ![alt text](image.png)
+- **Python** → Data cleaning & analysis  
+- **Pandas, NumPy** → Data wrangling & transformation  
+- **Matplotlib, Seaborn** → Data visualization  
+- **ReportLab** → Automated PDF reporting  
+- **Jupyter Notebook** → Interactive exploration  
 
-- **US-born Laureates by Decade**  
-  ![alt text](image-1.png)
-
-- **Female Laureates by Category & Decade**  
-  ![alt text](image-2.png)
-
-- **Top Birth Countries**  
- ![alt text](image-4.png)
-
-## 📈 Future Work
-- Add external datasets (affiliations, socioeconomic factors) for causal analysis.
-- Extend dashboard with Nobel laureate search and interactive maps.
-- Build predictive models for Nobel Prize trends.
 ---
 
-## 🖥️ Run Locally
-```bash
+## 📈 Methodology  
 
-# Launch Jupyter Notebook
-jupyter notebook Nobel_Analysis.ipynb
+1. **Data Preparation**  
+   - Cleaned raw dataset  
+   - Extracted time features from `TIME OCC`  
+   - Created victim age groups  
 
-## 🛠️ Tools & Libraries
-- Python (Pandas, Matplotlib, Seaborn)
-- Jupyter Notebook
-- Git & GitHub
+2. **Exploratory Data Analysis (EDA)**  
+   - Visualized crime frequencies by **hour, area, and age group**  
+   - Identified **nighttime hotspots**  
 
-## 👤 Author
-**Your Name**  
-- [www.linkedin.com/in/joshuaugochukwu](#) | [https://github.com/UCJPENIEL/UCJPENIEL](#)
+3. **Findings & Insights**  
+   - Peak crime hour occurs at **12 PM (noon)**  
+   - Night crimes (8 PM – 5 AM) cluster in specific areas such as **Downtown Los Angeles**  
+   - Most vulnerable victims are **young adults (18–44 years old)**  
+
+4. **Report Generation**  
+   - Summarized findings in a **professional PDF report** with charts  
+
+---
+
+## 🔍 Key Insights  
+
+✔️ **Crimes peak at noon** → Suggests reallocating daytime patrols.  
+✔️ **Top night crime hotspots** → Downtown & nearby areas, requiring focused patrols.  
+✔️ **Young adults (18–44)** are most targeted → Awareness campaigns should focus on them.  
+
+---
+
+## 📊 Sample Visualizations  
+
+| Crimes by Hour | Top 5 Areas with Night Crimes | Victim Age Groups |
+|----------------|-------------------------------|------------------|
+|<img width="1023" height="545" alt="image" src="https://github.com/user-attachments/assets/94e1bb92-034e-4bd9-974e-4fdf3e74404e" />|<img width="704" height="520" alt="image" src="https://github.com/user-attachments/assets/c4855c75-d355-473e-a01a-abddda45988e" />|<img width="713" height="493" alt="image" src="https://github.com/user-attachments/assets/7efd1071-3c6e-42f5-864b-ce05dc6b3a7f" />|
+
+---
+
+## 🚀 How to Run the Project  
+
+1. Clone the repository:  
+
+   ```bash
+   git clone https://github.com/YourUsername/lapd-crime-analysis.git
+   cd lapd-crime-analysis
