@@ -67,10 +67,9 @@ All visuals were built in **Jupyter Notebook** using **Matplotlib** and **Seabor
 ---
 
 ## 📸 Visualizations
-*(Export your plots as PNGs, save them in an `/images` folder, and replace the links below.)*
 
 - **Gender Distribution**  
-  ![Gender Distribution](images/gender_distribution.png)
+  |<images/gender_distribution.png/>
 
 - **US-born Laureates by Decade**  
   ![US Born by Decade](images/us_born_by_decade.png)
