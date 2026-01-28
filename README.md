@@ -13,8 +13,7 @@ All visuals were built in **Jupyter Notebook** using **Matplotlib** and **Seabor
 
 ---
 
-## 📊 Dataset
-- **File:** [View dataset]("C:\Users\NEW USER\Downloads\Visualizing the History of Nobel Prize Winners\nobel.csv").  
+## 📊 Dataset 
 - **Features:** Year, Category, Birth Country, Sex, Motivation, etc.  
 - **Derived Columns:**  
   - `decade` → Groups laureates by decade  
