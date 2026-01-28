@@ -69,43 +69,15 @@ All visuals were built in **Jupyter Notebook** using **Matplotlib** and **Seabor
 ## 📸 Visualizations
 
 - **Gender Distribution**  
-  |<images/gender_distribution.png/>
+  |<img width="463" height="468" alt="image" src="https://github.com/user-attachments/assets/6160bef9-2480-44df-bbc9-41c74572427e" />
 
 - **US-born Laureates by Decade**  
-  ![US Born by Decade](images/us_born_by_decade.png)
+  !<img width="846" height="468" alt="image" src="https://github.com/user-attachments/assets/484ab352-d459-480f-a99c-7a3aa6e044bf" />
+
 
 - **Female Laureates by Category & Decade**  
-  ![Female Laureates](images/female_laureates.png)
+  !<img width="1179" height="545" alt="image" src="https://github.com/user-attachments/assets/e379abd4-a006-4e72-9765-218cd6d6bb83" />
+
 
 - **Top Birth Countries**  
-  ![Top Countries](images/top_birth_countries.png)
-
----
-
-## 🖥️ Run Locally
-```bash
-# Install dependencies
-pip install pandas matplotlib seaborn jupyter
-
-# Launch Jupyter Notebook
-jupyter notebook Nobel_Analysis.ipynb
-)
-
-- **US-born Laureates by Decade**  
-  ![US Born by Decade](images/us_born_by_decade.png)
-
-- **Female Laureates by Category & Decade**  
-  ![Female Laureates](images/female_laureates.png)
-
-- **Top Birth Countries**  
-  ![Top Countries](images/top_birth_countries.png)
-
----
-
-## 🖥️ Run Locally
-```bash
-# Install dependencies
-pip install pandas matplotlib seaborn jupyter
-
-# Launch Jupyter Notebook
-jupyter notebook Nobel_Analysis.ipynb
+  <img width="850" height="587" alt="image" src="https://github.com/user-attachments/assets/72aeb894-8683-4b90-8390-524c14528b8a" />
